@@ -176,7 +176,7 @@ def main():
     st.title("Chatbot Agente RAG con PDF y Herramientas")
 
     # --- CARGA DE PDF DESDE CODIGO ---
-    pdf_path = r"flashia.pdf"  # **RUTA HARDCODEADA AQUÍ**
+    pdf_path = "flashia.pdf"  # **RUTA HARDCODEADA AQUÍ**
     documentos = load_data(pdf_path)
     if documentos:
         db = crear_vector_store(documentos) # Initialize the global db here
